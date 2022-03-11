@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,21 +21,30 @@ public class LoginTest extends BaseTest {
 	ForgotPasswordPage fp = null;
 
 	@BeforeMethod
-	public void initPages() {
+	public void initPages(ITestResult result) {
+		logger = reports.createTest(result.getMethod().getMethodName());
 		homePage = new HomePage(driver);
 		loginPage = new LoginPage(driver);
 		myAccPage = new MyAccountPage(driver);
 		fp = new ForgotPasswordPage(driver);
-		
+		logger.info("Browser Launched");
 		homePage.navToLoginPage();
+		logger.pass("Navigated to Login Page");
 	}
 	
 	@Test(priority=0)
 	public void verifyValidLogin() {
+		logger.info("Entered user name");
+		logger.info("Entered password");
+		logger.info("Cliked on Login Button");
+
 		loginPage.login("dem7@gmail.com","xyzabc");
+		logger.pass("Navigated to Home Page");
 		assertEquals(myAccPage.lbl_MyAccountPageTitle, getTitle());
 		assertTrue(isElementPresent(myAccPage.lnk_signOut));
 		myAccPage.signout();
+		logger.pass("Verified Login is successful");
+
 	}
 
 	@Test(priority=1)

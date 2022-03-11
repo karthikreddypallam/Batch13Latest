@@ -30,7 +30,7 @@ public class BaseTest {
 	
 	public static ExtentHtmlReporter htmlReporter = null;
 	public static ExtentReports reports = null;
-	public static ExtentTest test;
+	public static ExtentTest logger;
 	
 	WebDriver driver = null;
 	WebDriverWait wait= null;
@@ -145,6 +145,7 @@ public class BaseTest {
 	@AfterTest(alwaysRun=true)
 	public void quit() {
 		driver.quit(); 
+		reports.flush();
 	}
 	
 	public String getTitle() {
