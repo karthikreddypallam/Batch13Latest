@@ -12,6 +12,8 @@ import com.ap.pages.ForgotPasswordPage;
 import com.ap.pages.HomePage;
 import com.ap.pages.LoginPage;
 import com.ap.pages.MyAccountPage;
+import com.ap.utils.Retry;
+import com.ap.utils.RetryListener;
 
 public class LoginTest extends BaseTest {
 	
@@ -44,8 +46,8 @@ public class LoginTest extends BaseTest {
 		assertTrue(isElementPresent(myAccPage.lnk_signOut));
 		myAccPage.signout();
 		logger.pass("Verified Login is successful");
-
 	}
+	//@Test(priority=1,retryAnalyzer = Retry.class)
 
 	@Test(priority=1)
 	public void verifyInvalidLogin() {

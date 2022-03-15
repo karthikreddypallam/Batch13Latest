@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Smoke Suite">
+<listeners>
+		<listener class-name="com.ap.utils.TestListener" />
+		<listener class-name="com.ap.utils.RetryListener" />
+</listeners>
 	<test name="Login Test">
 		<classes>
 			<class name="com.ap.tests.LoginTest" />

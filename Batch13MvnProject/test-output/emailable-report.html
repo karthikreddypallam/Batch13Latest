@@ -8,14 +8,21 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">55,232</td><td></td><td></td></tr>
+<tr><th colspan="8">Smoke Suite</th></tr>
+<tr><td><a href="#t0">Login Test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">58,857</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.ap.tests.LoginTest</td><td><a href="#m0">verifyEmptyLogin</a></td><td rowspan="1">1647005719907</td><td rowspan="1">6873</td></tr><tr class="passedeven"><td><a href="#m1">verifyForgotPasswordPageNavigation</a></td><td rowspan="1">1647005730326</td><td rowspan="1">2780</td></tr><tr class="passedeven"><td><a href="#m2">verifyInvalidLogin</a></td><td rowspan="1">1647005703714</td><td rowspan="1">6346</td></tr><tr class="passedeven"><td><a href="#m3">verifyValidLogin</a></td><td rowspan="1">1647005691766</td><td rowspan="1">6345</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Smoke Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ap.tests.LoginTest</td><td><a href="#m0">verifyEmptyLogin</a></td><td rowspan="1">1647350254327</td><td rowspan="1">5855</td></tr><tr><th colspan="4">Login Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">com.ap.tests.LoginTest</td><td><a href="#m1">verifyEmptyLogin</a></td><td rowspan="1">1647350245417</td><td rowspan="1">5894</td></tr><tr><th colspan="4">Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.ap.tests.LoginTest</td><td><a href="#m2">verifyForgotPasswordPageNavigation</a></td><td rowspan="1">1647350267694</td><td rowspan="1">963</td></tr><tr class="passedeven"><td><a href="#m3">verifyInvalidLogin</a></td><td rowspan="1">1647350235717</td><td rowspan="1">7058</td></tr><tr class="passedeven"><td><a href="#m4">verifyValidLogin</a></td><td rowspan="1">1647350222091</td><td rowspan="1">8209</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.ap.tests.LoginTest#verifyEmptyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ap.tests.LoginTest#verifyForgotPasswordPageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.ap.tests.LoginTest#verifyInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.ap.tests.LoginTest#verifyValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Test</h2><h3 id="m0">com.ap.tests.LoginTest#verifyEmptyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.ap.tests.LoginTest.verifyEmptyLogin(LoginTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ap.tests.LoginTest#verifyEmptyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.ap.tests.LoginTest.verifyEmptyLogin(LoginTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ap.tests.LoginTest#verifyForgotPasswordPageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ap.tests.LoginTest#verifyInvalidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ap.tests.LoginTest#verifyValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

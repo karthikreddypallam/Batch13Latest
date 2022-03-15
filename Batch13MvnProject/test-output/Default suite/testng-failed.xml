@@ -5,7 +5,7 @@
     <classes>
       <class name="com.ap.tests.LoginTest">
         <methods>
-          <include name="verifyEmptyLogin"/>
+          <include name="verifyInvalidLogin"/>
           <include name="launchBrowser"/>
           <include name="initPages"/>
           <include name="init"/>
